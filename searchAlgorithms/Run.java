@@ -1,8 +1,8 @@
-package SearchAlgorithms;
+package searchAlgorithms;
 
 public class Run {
     public static void main(String[] args) {
-        Linear linear = new Linear();
+        SearchAlgorithms.Linear linear = new SearchAlgorithms.Linear();
 
         String message = "Value not found";
         int[] nums = {5, 8, 9, 11, 14, 1};
@@ -11,7 +11,7 @@ public class Run {
         int result = linear.linearSearch(nums, target);
 
         if (result != -1) {
-            System.out.println(STR." The value has been found on index: \{result}");
+            System.out.println(" The value has been found on index:" + result);
         } else {
             System.out.println(message);
         }
